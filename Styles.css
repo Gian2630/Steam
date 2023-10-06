@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+    scroll-behavior:auto;   
+  }
+
+  .barra-de-navegacion{
+    background-color: #171d25;
+    color: white;
+    padding: 0;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+  }
+
+  .bn-item {
+    color: white;
+    text-decoration: none;
+    padding: 24px;
+    transition: background-color 0.3s;
+  }
+
+  .bn-item:hover {
+    text-decoration: underline;
+  }
+
+
+  .contenedor{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 80vh;
+    background-color:#1b2838;
+    flex-direction: column;
+  }
+
+  
+  .Secciones-seccion {
+    display: flex;
+    width: 280px; 
+    height: 60vh; 
+    color: white;
+    flex-direction: column;
+    padding: 0px;
+    
+    
+    background-color: #1b2838;; 
+    margin: 25px;
+    float: left; 
+    
+
+    border-radius: 10px;
+    border: 3px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+ 
+}
+
+.Secciones-seccion h4{
+  color:  #8f98a0;
+  font-size: small;
+  margin: 20px 12px;
+}
+
+.seccion-plan .precio{
+  margin-top: 30%;
+}
+
+.seccion-plan.bronce .precio{
+  margin-top: 66%;
+}
+
+.seccion-plan.plata .precio{
+  margin-top: 45%;
+}
+
+
+
+
+.seccion-plan h3,p{
+  color: #fff;
+  text-align: center;
+}
+
+.Secciones-seccion .seccion-plan{
+ height: 100%;
+ width: 100%;
+ 
+}
+
+.Secciones-seccion .seccion-plan .boton-plan {
+
+background-color: #12204d;
+color: #fff; 
+padding: 20px 20px; 
+text-decoration: none;
+border: 1px solid #000;
+border-radius: 5px; 
+transition: background-color 0.3s, border-color 0.3s;
+cursor: pointer;
+margin: 80px;
+
+}
+
+.precio{
+  margin-block-end: 20%;
+}
+
+
+
+.Secciones-seccion .seccion-plan.bronce:hover{
+  box-shadow: 3px 3px 30px #cd7f32;
+
+}
+
+.Secciones-seccion .seccion-plan.plata:hover{
+  box-shadow: 3px 3px 30px #c0c0c0;
+
+}
+
+.Secciones-seccion .seccion-plan.oro:hover{
+  box-shadow: 3px 3px 30px #ffd700;
+}
+
+
+.seccion-plan .boton-plan:hover {
+  background-color: #163271;
+}
+
+
+/*Pie de pagina*/
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  background-color: #171a21;
+  color: rgba(206, 230, 206, 0.438);
+  height: 14vh; 
+}
+
+.footer-item{
+    color: white;
+    text-decoration: none;
+    padding: 0px;  
+}
+
+
+/* Media queries */
+
+@media screen and (width <= 1015px) {
+  .barra-de-navegacion {
+    flex-direction: column;
+    height: 200px;
+  }
+  .bn-item {
+    padding: 10px 10px; 
+  }
+  .barra-de-navegacion img{
+    margin-top: -10px;
+
+  }
+  
+
+
+  .Secciones-seccion {
+    width: 40%;
+    height: 30vh; 
+    margin: 10px 0; 
+  }
+
+  .Secciones-seccion h3,h4{
+    font-size: small;
+  }
+
+  .seccion-plan.bronce .precio {
+    margin-top: 0px; 
+    margin-left: 23;
+
+  }
+
+  .seccion-plan.plata .precio {
+    margin-top: -10px; 
+    margin-left: 233;
+  }
+
+
+  .seccion-plan.oro .precio {
+    margin-top: -110px; 
+    margin-left: 233;
+  }
+
+  .seccion-plan .boton-plan {
+    opacity: 0;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .seccion-plan{
+    cursor: pointer;
+  }
+
+  @media screen and (width <= 885px){
+    .barra-de-navegacion {
+    
+      height: 300px;
+    }
+    .bn-item {
+      padding: 5px 5px; 
+    }
+    .barra-de-navegacion img{
+      margin-top: -70px;
+  
+    }
+
+
+
+    .contenedor.secciones{
+      flex-direction: column;
+      align-items: center;
+      
+    }
+
+    .Secciones-seccion {
+      width: 100%; 
+      margin-bottom: 20px;
+      font-size: x-small; }
+
+    footer{
+      margin-top: 90px;
+    }
+
+
+
+  }
+
+
+}
+
+
+
+      
+  
+
+
