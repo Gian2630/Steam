@@ -233,8 +233,13 @@ footer{
       margin-bottom: 20px;
       font-size: x-small; }
 
+      .seccion-plan.oro h4{
+
+        margin: 10px;
+      }
+
     footer{
-      margin-top: 90px;
+      margin-top: 70px;
     }
 
 
